@@ -44,20 +44,20 @@ jobs:
             zip -r allure-report.zip allure-report
       - store_artifacts:
          path: allure-report.zip
-  workflows:
-    commit:
-      jobs:
-        - build-and-test
-    nightly:
-      triggers:
-        - schedule:
-            cron: "0 0 * * *"
-            filters:
-              branches:
-                only:
-                  - master
-      jobs:
-        - build-and-test
+workflows:
+  commit:
+    jobs:
+      - build-and-test
+  nightly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build-and-test
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
   # CircleCI will run this workflow on every commit.
