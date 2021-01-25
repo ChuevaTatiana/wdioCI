@@ -110,12 +110,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="npm.report:open" />
       <item itemvalue="npm.report:generate" />
-      <item itemvalue="npm.test:firefox" />
-      <item itemvalue="npm.test:firefox:headless" />
+      <item itemvalue="npm.report:open" />
       <item itemvalue="npm.test:chrome" />
       <item itemvalue="npm.test:chrome:headless" />
+      <item itemvalue="npm.test:firefox" />
+      <item itemvalue="npm.test:firefox:headless" />
     </list>
     <recent_temporary>
       <list>
